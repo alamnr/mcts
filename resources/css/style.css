@@ -1,0 +1,361 @@
+/*
+
+Orrange color : #e67e22
+hover Orrange color : #cf6d17
+
+*/
+
+/* ---------------------------------------------- */
+/* Basic Setup */
+/* ---------------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    color: #050505;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+.clearfix {
+    zoom:1;
+}
+.clearfix:after {
+    content: "."   ;
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+
+
+/* ---------------------------------------------- */
+/* Reusable Component */
+/* ---------------------------------------------- */
+
+
+.row {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 80px 0;
+}
+
+cite {
+    font-size: 50%;
+}
+
+.box {
+    padding: 1%;
+}
+
+
+/* Paragraphs */
+
+.long-copy {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+}
+
+
+.box p {
+    font-size: 80%;
+    line-height: 145%;
+}
+
+
+
+/* ---------------------------------------------- */
+/* Icons */
+/* ---------------------------------------------- */
+
+.icon-big {
+    font-size: 300%;
+    display: block;
+    color: #e67e22;
+    margin-bottom: 10px;
+}
+
+.icon-small {
+    display: inline-block;
+    width:30px;
+    text-align: center;
+    color: #e67e22;
+    font-size: 120%;
+    margin-right: 10px;
+    
+    /* secret to align text and icon */
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
+}
+
+/* ---------------------------------------------- */
+/* Lincs */
+/* ---------------------------------------------- */
+
+a:link,
+a:visited {
+    color: #e67e22;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #e67e22;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active {
+    color: #555;
+    border-bottom: 1px solid transparent;
+}
+
+/* ---------------------------------------------- */
+/* Headings */
+/* ---------------------------------------------- */
+
+h1
+h2,
+h3 {
+    font-weight: 400;
+    text-transform: uppercase;
+      
+}
+
+h1 {
+    color: #fff;
+    font-size: 240%;   
+    word-spacing: 3px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;  
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;  
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content: "";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+h3 {
+    font-size: 90%;
+    margin-bottom: 15px;
+    
+}
+
+/* ---------------------------------------------- */
+/* Buttons */
+/* ---------------------------------------------- */
+
+
+.btn:link, .btn:visited {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;  
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link, .btn-full:visited {
+    background-color: #e67e22;    
+    border: 1px solid #e67e22;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.btn-ghost:link, .btn-ghost:visited {
+    border: 1px solid #e67e22;
+    color: #e67e22;
+}
+
+.btn:active, .btn:hover {
+     background-color: #cf6d17;   
+}
+
+.btn-full:active, .btn-full:hover {
+    border: 1px solid #cf6d17;    
+}
+
+.btn-ghost:active, .btn-ghost:hover {
+    border: 1px solid #cf6d17;
+    color: #fff;
+}
+
+/* ---------------------------------------------- */
+/* Header */
+/* ---------------------------------------------- */
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(img/mcts.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 70%;
+    top: 50%;
+    left: 57%;
+    transform: translate(-50%,-50%);   
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+    border-radius: 50%;
+    float: left;
+    margin-top: 20px;
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link, .main-nav li a:visited {
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 80%;
+    word-spacing: 3px;
+    /*border-bottom: 2px solid transparent;*/
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover, .main-nav li a:active {
+    border-bottom: 2px solid #e67e22;
+}
+
+/* ---------------------------------------------- */
+/* Feature */
+/* ---------------------------------------------- */
+
+.section-features .long-copy {
+    margin-bottom: 30px;
+}
+
+/* ---------------------------------------------- */
+/* Gallery */
+/* ---------------------------------------------- */
+
+
+.section-gallery {
+    padding: 0;
+    margin-top: 40px;
+    background-color: #f4f4f4;
+}
+
+.gallery-showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.gallery-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.gallery-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.gallery-photo img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+} 
+
+.gallery-photo img:hover {
+     opacity: 1;
+    transform: scale(1.03);
+}
+
+/* ---------------------------------------------- */
+/* Message */
+/* ---------------------------------------------- */
+
+.section-message {
+    background-color: #f4f4f4;
+}
+
+.principle-img {
+    float: left;
+    padding: 20px;
+}
+
+.principle-img img {
+    display: block;
+}
+
+ figcaption {
+    font-size: 80%;    
+}
+
+
+.principle-message {
+    text-align: justify;
+}
+
+.principle-message::first-letter {
+  font-size: 200%;
+  font-weight: inherit;
+  color: #e67e22;
+}
+
+/* ---------------------------------------------- */
+/* Location */
+/* ---------------------------------------------- */
+
+.box img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.address-feature {
+    margin-bottom: 5px;
+}
+
+/* ---------------------------------------------- */
+/* Testimonial */
+/* ---------------------------------------------- */
+
+.section-testimonials {
+    background-color: #f4f4f4;
+}
+
