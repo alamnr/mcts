@@ -50,9 +50,6 @@ section {
     padding: 80px 0;
 }
 
-cite {
-    font-size: 50%;
-}
 
 .box {
     padding: 1%;
@@ -219,7 +216,7 @@ header {
     width: 70%;
     top: 50%;
     left: 57%;
-    transform: translate(-50%,-50%);   
+    transform: translate(-48%,-50%);   
 }
 
 .logo {
@@ -256,12 +253,24 @@ header {
     border-bottom: 2px solid #e67e22;
 }
 
+.school-name h1{
+    position: absolute;
+    top: 80%;
+    left: 48%;
+    transform: translate(-48%,-50%);   
+/*    color:  #e67e22;*/
+}
+
 /* ---------------------------------------------- */
 /* Feature */
 /* ---------------------------------------------- */
 
 .section-features .long-copy {
     margin-bottom: 30px;
+}
+
+.section-features  cite {
+    font-size:50%;
 }
 
 /* ---------------------------------------------- */
@@ -381,13 +390,13 @@ blockquote:before {
     left: -3px;
 }
 
-cite {
+.section-testimonials cite {
     font-size: 90%;
     margin-top: 25px;
     display: block;
 }
 
-cite img {
+.section-testimonials cite img {
     height: 45px;
     border-radius: 50%;
     margin-right: 10px;
