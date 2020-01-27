@@ -403,3 +403,55 @@ blockquote:before {
     vertical-align: middle;
 }
 
+/* ---------------------------------------------- */
+/* Plans */
+/* ---------------------------------------------- */
+
+.section-plan {
+    background-color: #f4f4f4;
+}
+
+.plan-box {
+    background-color: #fff;
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 5%;
+    box-shadow: 0 2px 2px #efefef;
+}
+
+.plan-box div {
+    padding: 15px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.plan-price-admission {
+    font-size: 80%;
+    margin-bottom: 10px;
+    color : #e67e22;
+    
+}
+
+
+.plan-price-monthly {
+    font-size: 80%; 
+    color : #e67e22;
+}
+
+.plan-box ul {
+    list-style: none;
+}
+
+.plan-box ul li {
+    padding: 5px 0;
+}
+
+.plan-box div:last-child {
+    text-align: center;
+    border: 0;
+}
+
+.plan-box div:first-child {
+    background-color: #fcfcfc;
+    border-top-left-radius: 5px;
+}
+
