@@ -24,16 +24,15 @@ html {
     text-rendering: optimizeLegibility;
 }
 
-.clearfix {
-    zoom:1;
-}
+.clearfix:before,
 .clearfix:after {
-    content: "."   ;
-    display: block;
-    clear: both;
-    height: 0;
-    visibility: hidden;
+  content: ".";    
+  display: block;    
+  height: 0;    
+  overflow: hidden;        
 }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1 ;} /* IE < 8 */
 
 
 /* ---------------------------------------------- */
@@ -165,7 +164,8 @@ h3 {
 /* ---------------------------------------------- */
 
 
-.btn:link, .btn:visited {
+.btn:link, .btn:visited,
+input[type=submit] {
     display: inline-block;
     padding: 10px 30px;
     font-weight: 300;
@@ -174,7 +174,8 @@ h3 {
     transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
 
-.btn-full:link, .btn-full:visited {
+.btn-full:link, .btn-full:visited,
+input[type=submit] {
     background-color: #e67e22;    
     border: 1px solid #e67e22;
     color: #fff;
@@ -245,7 +246,7 @@ header {
     text-transform: uppercase;
     font-size: 80%;
     word-spacing: 3px;
-    /*border-bottom: 2px solid transparent;*/
+    border-bottom: 2px solid transparent;
     transition: border-bottom 0.2s;
 }
 
@@ -253,7 +254,7 @@ header {
     border-bottom: 2px solid #e67e22;
 }
 
-.school-name h1{
+.school-name h1 {
     position: absolute;
     top: 80%;
     left: 48%;
@@ -280,8 +281,7 @@ header {
 
 .section-gallery {
     padding: 0;
-    margin-top: 40px;
-    background-color: #f4f4f4;
+    
 }
 
 .gallery-showcase {
@@ -454,4 +454,110 @@ blockquote:before {
     background-color: #fcfcfc;
     border-top-left-radius: 5px;
 }
+
+/* ---------------------------------------------- */
+/* Form */
+/* ---------------------------------------------- */
+
+
+.contact-form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+/* ---------------------------------------------- */
+/* Footer */
+/* ---------------------------------------------- */
+
+footer {
+    background-color: #333;
+    padding: 50px;
+    font-size: 80%;
+}
+
+.footer-nav {
+    list-style: none; 
+    float: left;
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li{
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+    margin-right: 0;
+}
+ 
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+    color: #888;
+    text-decoration: none;
+    border: 0;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.main-nav li a:active,
+.social-links li a:hover,
+.social-links li a:active {
+    color:#ddd;
+    cursor: pointer;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+ font-size: 170%;
+}
+
+.ion-logo-facebook,
+.ion-logo-twitter,
+.ion-logo-youtube,
+.ion-logo-instagram {
+    transition: color 0.2s;
+}
+
+.ion-logo-facebook:hover {
+    color: #3b5998;
+}
+
+.ion-logo-twitter:hover {
+    color: #55acee;
+}
+
+.ion-logo-youtube:hover {
+    color: #ff0000;
+}
+
+.ion-logo-instagram:hover {
+    color: #e95950;
+}
+
+
+footer p {
+    color: #888;
+    text-align: center;
+    margin-top: 30px;
+    
+}
+
 
