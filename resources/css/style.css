@@ -24,16 +24,15 @@ html {
     text-rendering: optimizeLegibility;
 }
 
-.clearfix:before,
-.clearfix:after {
-  content: ".";    
-  display: block;    
-  height: 0;    
-  overflow: hidden;        
-}
-.clearfix:after { clear: both; }
-.clearfix { zoom: 1 ;} /* IE < 8 */
+.clearfix { zoom:1 }
 
+.clearfix:after {
+     content: ".";
+     clear: both;
+     display: block;
+     height: 0;
+     visibility: hidden;
+}
 
 /* ---------------------------------------------- */
 /* Reusable Component */
@@ -214,11 +213,23 @@ header {
 
 .hero-text-box {
     position: absolute;
-    width: 70%;
+    width: 65%;
+    overflow: hidden;
     top: 50%;
-    left: 57%;
+    left: 65%;
     transform: translate(-48%,-50%);   
 }
+
+.school-name h1 {
+    position: absolute;
+    width: 65%;
+    overflow: hidden;
+    top: 80%;
+    left: 65%;
+    transform: translate(-48%,-80%);   
+    /* color:  #e67e22;*/
+}
+
 
 .logo {
     height: 100px;
@@ -254,13 +265,7 @@ header {
     border-bottom: 2px solid #e67e22;
 }
 
-.school-name h1 {
-    position: absolute;
-    top: 80%;
-    left: 48%;
-    transform: translate(-48%,-50%);   
-/*    color:  #e67e22;*/
-}
+
 
 /* ---------------------------------------------- */
 /* Feature */
@@ -323,12 +328,18 @@ header {
     background-color: #f4f4f4;
 }
 
-.principle-img {
+.principle-img-1 {
     float: left;
     padding: 20px;
 }
 
-.principle-img img {
+.principle-img-2 {
+    float: right;
+    padding: 20px;
+}
+
+.principle-img-1 img,
+.principle-img-2 img {
     display: block;
 }
 
