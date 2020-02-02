@@ -14,17 +14,18 @@ $(document).ready(function(){
     
     /*  Scroll on buttons */
     
-    $('.js--scroll-to-plans').click(function(){
-        
+    $('.js--scroll-to-plans').click(function(event){
+        event.preventDefault();
         $('html,body').animate({scrollTop:$('.js--section-plan').offset().top}, 1000);
     });
     
-    $('.js--scroll-to-start').click(function(){
-        
+    $('.js--scroll-to-start').click(function(event){
+        event.preventDefault();
         $('html,body').animate({scrollTop:$('.js--section-features').offset().top}, 1000);
     });
     
-    $('.js--scroll-to-location').on('click', function(){
+    $('.js--scroll-to-location').on('click', function(event){
+        event.preventDefault();
         $('html,body').animate({scrollTop:$('.js--section-location').offset().top}, 1000);
     });
     
@@ -88,7 +89,8 @@ $(document).ready(function(){
     
     /* Mobile Nav */
     
-    $('.js--nav-icon').on('click', function() {
+    $('.js--nav-icon').on('click', function(event) {
+        event.preventDefault();
         var nav = $('.js--main-nav');
         var icon = $('.js--nav-icon i'); 
         nav.slideToggle(200);
