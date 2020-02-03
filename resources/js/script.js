@@ -103,4 +103,22 @@ $(document).ready(function(){
         }
     });
     
+    /* Maps */
+    
+    var map = new GMaps({
+        div: '.map',
+        lat: 23.8244409,
+        lng: 90.3633894,
+        zoom: 16
+    });
+    
+    map.addMarker({
+        lat: 23.8244409,
+        lng: 90.3633894,
+       title:'Mother Teresa Catholic School' ,
+        infoWindow:{
+            content:'<p>Moether Teresa Catholic School Campus</p>'
+        }
+    });
+    
 });
